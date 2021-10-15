@@ -1,0 +1,104 @@
+/*!*****************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/postcss-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./styles/main.scss ***!
+  \*****************************************************************************************************************************************************/
+.dg.ac {
+  z-index: 99999 !important;
+}
+
+body {
+  font-size: 1.6rem;
+  font-weight: 300;
+}
+
+@font-face {
+  font-family: "Poppins";
+  src: url(68d81dcfc814cfa3ab64.woff2) format("woff2"), url(8027f3a9bfc2cf6b243a.woff) format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Poppins";
+  src: url(4ddf3db46ce6a1787560.woff2) format("woff2"), url(da2b0ac1db1282c69c31.woff) format("woff");
+  font-weight: 200;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Poppins";
+  src: url(0b7c39c265a685b53a58.woff2) format("woff2"), url(e4a9cf483453eb5eb75e.woff) format("woff");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Lato";
+  src: url(fbf0ea2f840d281ae7fc.woff2) format("woff2"), url(21abcdc217018492f4fe.woff) format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+body {
+  font-family: "Lato";
+}
+@media (max-width: 768px) {
+  body {
+    font-size: 100px;
+  }
+}
+
+.about__title {
+  background-color: #418aeb;
+}
+
+/*# sourceMappingURL=main.css.map*/
