@@ -1,10 +1,19 @@
+html {
+    font-size: calc(100vw/ 1920 * 10)
+}
 body{
-    @extend %description-16; 
-    font-family: $font-lato;
+     @extend %description-16; 
+     font-family: $font-lato;
+     font-size: 20px;
+
   
 
     @include media('<=phone') {
         font-size: 100px;
     }
 
+} 
+
+a {
+    text-decoration: none;
 }

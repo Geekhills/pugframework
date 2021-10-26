@@ -2,7 +2,7 @@
 @import './utils/variables';
 @import './utils/vendors';
 @import './utils/mixins';
-@import './utils/responsive.scss';
+@import './utils/responsive';
 
 
 @import './shared/description';
@@ -11,6 +11,9 @@
 @import './base/font.scss';
 @import './base/reset';
 @import './base/base';
+
+@import './components/preloader';
+@import './layout/navigation';
 
 @import './pages/about/about';
 @import './pages/about/content';

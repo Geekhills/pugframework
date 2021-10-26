@@ -1,12 +1,17 @@
 $color-black: #000;
 $color-white: #fff;
+$color-zircon:#FAFCFF;
 
+$color-bright-gray: #37384C;
+$color-cadet-blue:#B2BBC3;
+$color-contessa: #C97164;
 $font-lato: 'Lato';
-$font-poppins:'Poppins';
+$font-monts:'Montserrat';
 
 $ease-out-expo: cubic-bezier(0,19,1,0.22, 1);
 
 $z-indexes: (
+    'preloader',
     'navigation',
     'content'
 );
