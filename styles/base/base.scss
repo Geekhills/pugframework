@@ -1,19 +1,60 @@
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+
+//   user-select: none;
+}
+
 html {
-    font-size: calc(100vw/ 1920 * 10)
+    @extend %cover;
+    font-size: calc(100vw/ 1920 * 10);
+    line-height: 1;
+    overflow: hidden;
+    position: fixed;
+    
 }
 body{
-     @extend %description-16; 
-     font-family: $font-lato;
-     font-size: 20px;
+    @extend %cover;
+    @extend %description-16; 
 
-  
-
-    @include media('<=phone') {
-        font-size: 100px;
-    }
+    font-family: $font-lato;
+    font-size: 2rem;
+    position: fixed;
 
 } 
 
 a {
+    color: inherit;
     text-decoration: none;
+    outline: none;
 }
+
+img {
+   vertical-align: middle;
+
+    // opacity: 0;
+    // transition: opacity 0.4s ease;
+    // vertical-align: middle;
+    // &.loaded{
+    //     opacity: 1;
+    // }
+}
+
+.content {
+    @extend %cover;
+}
+
+[data-animation="label"],
+[data-animation="paragraph"],
+[data-animation="title"]
+
+ 
+{
+    span{
+        display: inline-block;
+        overflow: hidden;
+        vertical-align: top;
+
+    }
+} 

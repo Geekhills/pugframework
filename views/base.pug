@@ -15,7 +15,8 @@ html(lang="en")
         link(rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png")
         link(rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png")
         link(rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png")
-        link(rel="manifest" href="/site.webmanifest")
+        
+        //- link(rel="manifest" href="/site.webmanifest")
         meta(name="msapplication-TileColor" content="#da532c")
         meta(name="theme-color" content="#ffffff")
 
@@ -29,8 +30,8 @@ html(lang="en")
         meta(property="twitter:description" content=meta.data.description)
         meta(property="twitter:image" content=meta.data.image ? meta.data.image.url: '')
 
-        link(rel="preconnect"  href="https://www.google-analytics.com")
-        link(rel="preconnect"  href="https://www.fonts.gstatic.com")
+        //- link(rel="preconnect"  href="https://www.google-analytics.com")
+        //- link(rel="preconnect"  href="https://www.fonts.gstatic.com")
 
         link(rel="stylesheet" href="main.css")
 
@@ -53,3 +54,5 @@ html(lang="en")
 
        .content#content(data-template=template)
          block content
+     
+       script(src="main.js")

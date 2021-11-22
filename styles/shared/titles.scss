@@ -1,3 +1,7 @@
+%title-20 {
+    font-family: $font-monts;
+    font-size: 3rem;
+}
 %title-53 {
     font-family: $font-monts;
     font-size: 5.3rem;
@@ -25,4 +29,12 @@
 %title-200{
     font-family: $font-monts;
     font-size: 20rem;
+}
+
+%vertical-titles {
+    display: flex;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%, -50%) rotate(-90deg);
+    top: 50%;
 }

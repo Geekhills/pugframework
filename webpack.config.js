@@ -7,7 +7,7 @@ const TerserPlugin = require('terser-webpack-plugin')
 
 const IS_DEVELOPMENT = process.env.NODE_ENV ==='dev'
 
-const dirApp = path.join(__dirname,'src')
+const dirApp = path.join(__dirname,'app')
 const dirShared = path.join(__dirname,'shared')
 const dirStyles = path.join(__dirname,'styles')
 const dirNode = 'node_modules'
@@ -15,7 +15,11 @@ const dirNode = 'node_modules'
 
 module.exports = {
     mode: 'development',
-    devtool:'source-map',
+    // devtool:'source-map',
+    devtool:'inline-source-map',
+    devServer: {
+      static: './public',
+    },
     // context: path.resolve(__dirname,'src'),
     // entry: ['./main.js', './main.scss'],
     entry: [
@@ -27,6 +31,7 @@ module.exports = {
             dirApp,
             dirShared,
             dirStyles,
+            dirNode
             
         ]
     },
@@ -62,7 +67,7 @@ module.exports = {
                    ]
          },
          {
-            test: /\.(jpg?g|png|gif|svg|woff2?|fnt|webp)$/,
+            test: /\.(jpg?g|png|gif|svg|woff?2|fnt|webp)$/,
             loader: 'file-loader',
             options: {
                 name (file) {

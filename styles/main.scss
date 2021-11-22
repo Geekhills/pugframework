@@ -1,3 +1,5 @@
+@import './base/reset';
+
 @import './utils/functions';
 @import './utils/variables';
 @import './utils/vendors';
@@ -6,14 +8,25 @@
 
 
 @import './shared/description';
+@import './shared/links';
+@import './shared/pages';
 @import './shared/titles';
+@import './shared/vertical-titles';
+
+
 
 @import './base/font.scss';
-@import './base/reset';
 @import './base/base';
 
 @import './components/preloader';
 @import './layout/navigation';
+
+@import './pages/details/detail';
+
+@import './pages/home/home';
+
+@import './pages/work/work';
+
 
 @import './pages/about/about';
 @import './pages/about/content';

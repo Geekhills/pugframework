@@ -1,3 +1,7 @@
-p
-  | The pipe always goes at the beginning of its own line,
-  | not counting indentation.
+extends ../base.pug 
+
+block variables
+  -var template = 'portfolio'
+
+block content 
+  h1.collections_title Portfolio 

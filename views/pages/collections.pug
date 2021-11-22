@@ -2,6 +2,30 @@ extends ../base.pug
 
 block variables
   -var template = 'collections'
-
 block content 
-  h1.collections_title Collections 
+  .collections(data-background="#BC978C" data-color="#F9F1E7")
+    .collections__wrapper 
+      .collections__titles 
+        each collection ,index in work 
+          .collections__titles__label=`${home.data.collection} ${Numbers(index)}`
+          .collections__titles__title=collection.data.title 
+
+      .collections__gallery 
+        .collections__gallery__wrapper 
+          each collection in work 
+            each project in collection.data.projects  
+              a.collections__gallery__link(href=Links(project.projects_project))
+                figure.collections__gallery__media 
+                  img.collections__gallery__media__image(alt=project.projects_project.data.image.alt  data-src=project.projects_project.data.image.url)
+
+      .collections__content
+          each collection, index in work
+            article.collections__article(class=`${index === 0 ? 'collections__article--active' : 'collections__article'}`)
+              h2.collections__title=`${collection.data.title} ${home.data.collection}`
+              p.collections__description=collection.data.description
+
+      .collections__mobile
+        each collection, index in work
+          .collections__mobile__item
+            .collections__mobile__item__label!=`${home.data.collection}<br/>`
+            .collections__mobile__item__title=collection.data.title

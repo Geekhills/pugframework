@@ -1,0 +1,31 @@
+extends ../base.pug 
+
+block variables
+  -var template = 'detail'
+
+block content 
+  .detail(data-background="#BC978C" data-color="#F9F1E7") 
+    .detail__wrapper 
+      figure.detail__media
+        img.detail__media__image(alt=project.data.image.alt data-src=project.data.image.url)
+      .detail__information 
+        p.detail__infromation__collection=project.data.work.data.title
+
+        h1.detail__information__title=project.data.title 
+
+        .detail__information__content 
+          .detail__information__highlights 
+            each highlight in project.data.highlight 
+              p.detail__information__highlight 
+                svg.detail__information__highlight__icon 
+                  use(xlink:href=`sprite-${highlight.highlight_icons}`)
+
+                span.detail__information__highlight!=highlight.highlight_text.replace(/\n/, '<br>')
+
+          .detail__infromation__list 
+            each item in project.data.information
+              p.detail__information__item 
+                strong.detail__information__item__title=item.information_label 
+                span.detail__information__item__description=item.information_description 
+
+          a.detail__information__link(href=project.data.link_url.url target="_blank")=project.data.link_text
